@@ -27,6 +27,7 @@ public class Enter_ActInfoPage extends BasePage{
 	@FindBy(xpath="//select[@id='days']") WebElement drp_Day;
 	@FindBy(xpath="//select[@id='months']") WebElement drp_Month;
 	@FindBy(xpath="//select[@id='years']") WebElement drp_Year;
+	@FindBy(xpath="//b[normalize-space(text())='Enter Account Information']") WebElement msg_EnterActInfo;
 	@FindBy(xpath="//h2[@data-qa='account-created']") WebElement msg_ActCreated;
 	
 	public void setGender_Mr() {
@@ -86,6 +87,9 @@ public class Enter_ActInfoPage extends BasePage{
 	}
 	public boolean msgActCreated() {
 		return msg_ActCreated.isDisplayed();
+	}
+	public boolean msgEnterActinfo() {
+		return msg_EnterActInfo.isDisplayed();
 	}
 	
 	
