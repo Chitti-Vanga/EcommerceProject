@@ -17,6 +17,7 @@ public class LoginOrSignupPage extends BasePage {
 	@FindBy(xpath="//input[@placeholder='Name']") WebElement txtSignUpName;
 	@FindBy(xpath="//input[@data-qa='signup-email']")WebElement txtSignUpEmail;
 	@FindBy(xpath="//button[normalize-space()='Signup']")WebElement btnSignUp;
+	@FindBy(xpath="//p[normalize-space()='Email Address already exist!']") WebElement msg_AlreadyExists;
 	
 	public void setLoginEmail(String email) {
 		txtLoginEmail.sendKeys(email);
@@ -29,17 +30,20 @@ public class LoginOrSignupPage extends BasePage {
 	public void clickLogin() {
 		btnLogin.click();
 	}
-	public void setSupName(String name)
+	public void setSupName(String sname)
 	{
-		txtSignUpName.sendKeys(name);
+		txtSignUpName.sendKeys(sname);
 	}
-	public void setSupEmail(String email) 
+	public void setSupEmail(String semail) 
 	{
-		txtSignUpEmail.sendKeys(email);
+		txtSignUpEmail.sendKeys(semail);
 	}
 	public void clickSingUp() 
 	{
 		btnSignUp.click();
+	}
+	public boolean emailExists(){
+		return msg_AlreadyExists.isDisplayed();
 	}
 
 }
