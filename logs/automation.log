@@ -41,3 +41,9 @@
 18:32:54.420 [main] INFO  - Goto Home page -->Click on Login/Signup.. 
 18:32:57.016 [main] INFO  - Enters new eamil
 18:33:00.496 [main] INFO  - Clicked SignUp
+18:43:37.852 [main] INFO  - Goto Home page -->Click on Login/Signup.. 
+18:43:39.678 [main] INFO  - Enters already registered email
+18:43:40.024 [main] INFO  - Clicked SignUp
+18:43:46.898 [main] INFO  - Goto Home page -->Click on Login/Signup.. 
+18:43:49.095 [main] INFO  - Enters new eamil
+18:43:51.133 [main] INFO  - Clicked SignUp
